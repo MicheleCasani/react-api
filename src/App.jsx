@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <div className="container mt-4">
-        {/* Intestazione con titolo*/}
+        {/* Intestazione con titolo */}
         <div className="row mb-4">
           <div className="col-12">
             <div className="d-flex justify-content-between">
@@ -37,17 +37,34 @@ function App() {
             </div>
           </div>
         </div>
+
         <div className="row g-4">
           {actors.map((actor) => (
-            <div key={actor.id} className="col-12">
-              <div className="card p-3">
-                <h3 className="card-title">{actor.name}</h3>
-                <p className="card-text">Age: {actor.birth_year}</p>
-                <p className="card-text">Nationality: {actor.nationality}</p>
-                <p className="card-text">Birth: {actor.birth_year}</p>
-                <p className="card-text">Biography: {actor.biography}</p>
-                <p className="card-text">Awards: {actor.awards}</p>
-                <img src={actor.image} alt="" />
+            <div key={actor.id} className="col-12 col-md-6 col-lg-4">
+              <div className="card h-100 p-3">
+
+                <div className="row g-0">
+
+                  <div className="col-5 d-flex align-items-center">
+                    <img
+                      src={actor.image}
+                      alt={actor.name}
+                      className="img-fluid rounded"
+                    />
+                  </div>
+
+
+                  <div className="col-7">
+                    <div className="card-body">
+                      <h5 className="card-title">{actor.name}</h5>
+                      <p className="card-text"><strong>Age:</strong> {actor.birth_year}</p>
+                      <p className="card-text"><strong>Nationality:</strong> {actor.nationality}</p>
+                      <p className="card-text"><strong>Birth:</strong> {actor.birth_year}</p>
+                      <p className="card-text"><strong>Biography:</strong> {actor.biography}</p>
+                      <p className="card-text"><strong>Awards:</strong> {actor.awards}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
