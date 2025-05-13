@@ -22,6 +22,7 @@ riconoscimenti
 MILESTONE 3
 Mostriamo in pagina una card per ciascun attore, con grafica a piacimento!
 Numero minimo di push: 8
+
 BONUS 1 :rilassato:
 Stampare sia una lista delle attrici che degli attori, separatamente.
 BONUS 2 :occhiali_da_sole:
