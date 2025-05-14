@@ -48,9 +48,7 @@ function App() {
         {/* Intestazione con titolo */}
         <div className="row mb-4">
           <div className="col-12">
-            <div className="d-flex justify-content-between">
-              <h1>Actors API</h1>
-            </div>
+            <h1>Actors API</h1>
           </div>
         </div>
 
